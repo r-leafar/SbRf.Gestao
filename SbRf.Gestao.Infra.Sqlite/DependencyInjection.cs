@@ -25,15 +25,5 @@ namespace SbRf.Gestao.Infra.Sqlite
 
             return services;
         }
-
-        private static string GetConnectionString(IConfiguration config)
-        {
-            string baseFolder = System.Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-            string systemFolderName = "sbrf_gestao";
-            baseFolder = System.IO.Path.Join(baseFolder, systemFolderName);
-            string dbName = "gestao.db";
-            string connStr = Path.Combine(baseFolder, dbName);
-            return $"Data Source={connStr}";
-        }
     }
 }
