@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.13.35931.197
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesktopApp", "DesktopApp\DesktopApp.csproj", "{AC7D84CD-70CA-4CED-96E6-6E1905B326FE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SbRf.DesktopApp", "SbRf.DesktopApp\SbRf.DesktopApp.csproj", "{AC7D84CD-70CA-4CED-96E6-6E1905B326FE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SbRf.Gestao.Core", "SbRf.Gestao.Core\SbRf.Gestao.Core.csproj", "{CA3E865C-92BD-47FB-9EE0-30ADE849DAEB}"
 EndProject
