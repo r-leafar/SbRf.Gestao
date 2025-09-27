@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DesktopApp"
         mc:Ignorable="d"
-        Title="SbRf Sistemas" Height="450" Width="800">
+        Title="SbRf Sistemas" Height="450" Width="800" 
+        WindowStartupLocation="CenterScreen">
     <Menu>
         <MenuItem Header="_Produto">
             <MenuItem Header="_Cadastro" Click="MenuItem_Click"/>
