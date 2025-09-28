@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SbRf.Gestao.Core", "SbRf.Ge
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SbRf.Gestao.Infra.Sqlite", "SbRf.Gestao.Infra.Sqlite\SbRf.Gestao.Infra.Sqlite.csproj", "{F56E4058-37ED-4384-87CE-A1E18FD0E8E1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SbRf.Gestao.Core.Tests", "SbRf.Gestao.Core.Tests\SbRf.Gestao.Core.Tests.csproj", "{709C6DE0-19FE-4971-9DC8-862A09055BBE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{F56E4058-37ED-4384-87CE-A1E18FD0E8E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F56E4058-37ED-4384-87CE-A1E18FD0E8E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F56E4058-37ED-4384-87CE-A1E18FD0E8E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{709C6DE0-19FE-4971-9DC8-862A09055BBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{709C6DE0-19FE-4971-9DC8-862A09055BBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{709C6DE0-19FE-4971-9DC8-862A09055BBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{709C6DE0-19FE-4971-9DC8-862A09055BBE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
