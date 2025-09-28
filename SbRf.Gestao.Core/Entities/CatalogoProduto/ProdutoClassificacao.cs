@@ -12,14 +12,14 @@ namespace SbRf.Gestao.Core.Entities.CatalogoProduto
         private string _id;
         private string _nome;
 
-        public string Id
+        public required string Id
         {
             get { return _id; }
             set
             {
                Ensure.NotNullOrWhiteSpace(value, nameof(Id));
                ValidarId(value);
-               _id = value;
+               _id = RemoverZerosAEsquerda(value);
             }
         }
         public required string Nome
@@ -55,8 +55,17 @@ namespace SbRf.Gestao.Core.Entities.CatalogoProduto
                     throw new ArgumentException("Foi informado um valor que não é um número.", nameof(Id));
                 }
             }
-
         }
+        private string RemoverZerosAEsquerda(string id)
+        {
+            string[] partes = id.Split('.');
+            int[] final = new int[partes.Length];
 
+            for (int i = 0; i < final.Length; i++)
+            {
+                int.TryParse(partes[i], out final[i]);
+            }
+            return string.Join('.', final);
+        }
     }
 }
