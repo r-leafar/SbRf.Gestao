@@ -12,6 +12,13 @@ namespace SbRf.Gestao.Core.Tests
             Assert.Equal("A classificação precisa ter 4 níveis (Parameter 'Id')", exception.Message);
         }
         [Fact]
+        public void ClassificaoRemoveZerosAEsqurda()
+        {
+            var classificacao = new ProdutoClassificacao() { Id = "01.01.00.00", Nome = "Setor" };
+
+            Assert.Equal("1.1.0.0", classificacao.Id);
+        }
+        [Fact]
         public void ClassificacaoLancaExcecaoQuandoIdEhNullOuVazio()
         {
             var exception = Assert.Throws<ArgumentException>(() => new ProdutoClassificacao() { Id = "",Nome="Setor" });
