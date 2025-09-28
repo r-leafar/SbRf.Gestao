@@ -12,7 +12,7 @@ namespace SbRf.Gestao.Core.Tests
             Assert.Equal("A classificação precisa ter 4 níveis (Parameter 'Id')", exception.Message);
         }
         [Fact]
-        public void ClassificacaoLancaExcecaoQuandoIdEhNullOuVazia()
+        public void ClassificacaoLancaExcecaoQuandoIdEhNullOuVazio()
         {
             var exception = Assert.Throws<ArgumentException>(() => new ProdutoClassificacao() { Id = "",Nome="Setor" });
 
@@ -20,7 +20,7 @@ namespace SbRf.Gestao.Core.Tests
         }
 
         [Fact]
-        public void ClassificacaoLancaExcecaoQuandoNomeEhNullOuVazia()
+        public void ClassificacaoLancaExcecaoQuandoNomeEhNullOuVazio()
         {
             var exception = Assert.Throws<ArgumentException>(() => new ProdutoClassificacao() { Id = "1.0.0.0", Nome = "" });
 
@@ -34,7 +34,7 @@ namespace SbRf.Gestao.Core.Tests
             Assert.Equal("Classificação deve estar no formato X.X.X.X (ex: 1.1.0.0) (Parameter 'Id')", exception.Message);
         }
         [Fact]
-        public void ClassificacaoLancaExcecaoQuandoFormatoLetra()
+        public void ClassificacaoLancaExcecaoQuandoInformadoLetra()
         {
             var exception = Assert.Throws<ArgumentException>(() => new ProdutoClassificacao() { Id = "1.2.3.A", Nome = "Setor" });
 
